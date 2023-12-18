@@ -1,3 +1,4 @@
 # Specify custom order of categories (Docs)
 order:
- - Sample category
+ - Intro
+ - Skillset

@@ -1,8 +1,10 @@
 # Global site settings
 title: bytewax
-url: https://docs.bytewax.io
-author: bytewax
-email: konrad@sienkowski.eu
+# url: 'https://chagchagchag.github.io/eda-based-spring-cloud-doc/'
+url: 'https://chagchagchag.github.io/'
+baseurl: '/intro-gogogo'
+author: Soon Good Jung
+email: chagchagchag.dev@gmail.com
 language: en
 
 # Global site description, added to HEAD section if page/post description is not specified
@@ -34,6 +36,7 @@ excerpt-length: 20
 collections:
   docs:
     output: true
+    # permalink: /:collection/:path
   tutorials:
     output: true
 
@@ -54,12 +57,13 @@ defaults:
     values:
       layout: docs
       permalink: /:slugified_categories/:title/
-  - scope:
-      type: tutorials
-      path: _tutorials
-    values:
-      layout: tutorial
-      permalink: /tutorials/:title/
+      # permalink: /:categories/:title/
+  # - scope:
+  #     type: tutorials
+  #     path: _tutorials
+  #   values:
+  #     layout: tutorial
+  #     permalink: /tutorials/:title/
 
 # Include additional folders
 include:
