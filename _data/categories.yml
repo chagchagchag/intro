@@ -1,4 +1,5 @@
 # Specify custom order of categories (Docs)
 order:
- - Intro
- - Skillset
+ - WELCOME
+ - SKILLSET
+ - WHITESPACE
