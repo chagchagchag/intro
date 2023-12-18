@@ -26,11 +26,11 @@
                         {% for entry in docs %}
                             {% if page.url == entry.url or page.url == "/" and sortedDocs[0].title == entry.title %}
                                 <li class="docs__nav-dropdown-item docs__nav-dropdown-item--active">
-                                    <a href="/intro-gogogo{{ entry.url }}" class="docs__nav-dropdown-link">{{ entry.title }}</a>
+                                    <a href="/intro{{ entry.url }}" class="docs__nav-dropdown-link">{{ entry.title }}</a>
                                 </li>
                             {% else %}
                                 <li class="docs__nav-dropdown-item">
-                                    <a href="/intro-gogogo{{ entry.url }}" class="docs__nav-dropdown-link">{{ entry.title }}</a>
+                                    <a href="/intro{{ entry.url }}" class="docs__nav-dropdown-link">{{ entry.title }}</a>
                                 </li>
                             {% endif %}
                         {% endfor %}
