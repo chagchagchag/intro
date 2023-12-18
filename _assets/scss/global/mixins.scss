@@ -1,0 +1,65 @@
+/** Cross-browser grayscale **/
+@mixin grayscale($opacity){
+    -webkit-filter: grayscale($opacity);
+    filter: gray;
+}
+
+/** Cross-browser placeholder **/
+@mixin placeholder($color){
+    &::-webkit-input-placeholder{
+        color:$color;
+    }
+    &:-moz-placeholder{
+        color:$color;
+    }
+    &::-moz-placeholder{
+        color:$color;
+    }
+    &:-ms-input-placeholder{
+        color:$color;
+    }  
+}
+
+/** Cross-browser opacity **/
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); 
+}
+
+/** Cross-browser transition **/
+@mixin transition($args) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+/** Material Icons mixin **/
+@mixin material-icons($size){
+    font-weight: normal;
+    font-size: $size;
+    font-family: 'Material Icons';
+    font-style: normal;
+    line-height: 1;
+    direction: ltr;
+    letter-spacing: normal;
+    white-space: nowrap;
+    text-transform: none;
+    word-wrap: normal;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+/** Media queries (use with breakpoints from 'variables.scss' */
+@mixin media-min($breakpoint) {
+    @media screen and (min-width: $breakpoint) {
+        @content;
+    }
+}
+@mixin media-max($breakpoint) {
+    @media screen and (max-width: $breakpoint) {
+        @content;
+    }
+}

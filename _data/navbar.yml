@@ -1,0 +1,17 @@
+nav:
+- title: Home
+  url: /
+  button: false
+
+- title: Resources
+  url: #
+  dropdown:
+    - page: Docs
+      url: /
+    - page: Tutorials
+      url: /tutorials/
+  button: false
+
+- title: Contact Us
+  url: https://www.bytewax.io/contact-us/
+  button: true

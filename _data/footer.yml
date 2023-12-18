@@ -1,0 +1,14 @@
+copyright: Copyright 2021 by Bytewax, Inc. All rights reserved
+
+widgets:
+  - title: Resources
+    nav: 
+      - page: Documentation
+        url: /
+      - page: Tutorials
+        url: /tutorials/
+
+  - title: Legal
+    nav: 
+      - page: Privacy policy
+        url: /privacy-policy/

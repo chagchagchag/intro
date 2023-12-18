@@ -1,0 +1,21 @@
+/** Docs -- Layout **/
+.docs{
+    &__container{
+        padding-top:12px;
+        padding-bottom:64px;
+        @include media-min($sm){
+            padding-top:24px;
+            padding-bottom:96px;
+        }
+        @include media-min($lg){
+            padding-bottom:150px;
+        }
+    }
+    &__row{
+        position:relative;
+        align-items:flex-start;
+        @include media-min($sm){
+            flex-wrap:nowrap;
+        }
+    }
+}
